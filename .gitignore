@@ -1,27 +1,58 @@
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Latex files
 *.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
 *.bbl
 *.blg
 *.dvi
-*.fdb_latexmk
 *.glg
-*.glo
 *.gls
-*.idx
 *.ilg
 *.ind
-*.ist
 *.lof
-*.log
 *.lot
-*.nav
-*.nlo
-*.out
-*.pdfsync
-*.ps
-*.snm
-*.synctex.gz
-*.toc
-*.vrb
 *.maf
 *.mtc
-*.mtc0
+*.mtc1
+*.out
+*.synctex.gz
