@@ -1,44 +1,63 @@
 \chapter{Prior research:}
 \label{ch:prior}
-\textit{3-8 pages}
+% 3-8 pages
+% What research existed before you started.
+% What research have you based your work on.
+% What are the limitations of other peoples work.
+% Doing exactly what others have done is not by itself research.
+% You must do it dierent/better/...
+% Your supervisor knows state of the art very well. S/he will judge you by it.
 
-There are several different computational tools used to simulate human movement during emergencies, 
-for instance fluid and particle systems, matrix-based systems and emergent systems. 
-
-It has been found that fluid and particle systems do not adequately describe human movement as humans 
-panic and make choices, both good and bad, and they all have individual quirks. For instance, in a room with 
-multiple exits a crowd tend to form a herd mentality and the majority will gather around a single exit, which 
-will slow down their speed, and other exits will see little use. However had this been simulated with a fluid 
-and particle system it would likely predict that all exits would be used equally for maximum effect.
-
-In a matrix-based system the room(s) and divided into cells. The cells can represent a table, it can be full of 
-people or it can be empty. People can move from cell to cell at a rate described in the model and by the 
-rules of the model. It is important that these cells and rules are properly adjusted to fit each model as to 
-make it as realistic and precise as possible.
-
-In emergent systems simple parts can interact to simulate complex systems. The existing emergent systems 
-are often criticized for being too simple. The system are often given only a few parameters (for example the 
-average speed of the humans and the location of the exits) and then attempt to model the situation by 
-asuming all humans move towards the most logical exit.
-
-In general the computational tools rely too much on assumptions and too little on the sociological and psychological 
-factors. When a human is put into a crisis-situation that person can either rely on instinct, experience or making 
-choices based on the alternatives. Relying on instict typically means that the person is panicing and make immediate 
-decisions that may or may not be good ones. People have been trambled to death by crowds that desperatly is trying 
-to get away from the danger.
-
-A person will often follow the path it knows the best. If a worker walks up the same flight of stairs to his office 
-every day for 5 years it is expected that he will also escape down the same flight of stairs during a crisis. This 
-is why there are fire drills, so that during a crisis everyone have walked the quickest paths out.
-
-In a crisis that is time-sensitive, for instance a fire, it is very difficulty for a person to weigh his options and 
-chose carefully. Some people will not stand around to observe which path might be the best or wether the 
-door is hot before opening the door. However standing around and chosing carefully might be even worse as 
-over time there might be fewer safe paths as the fire spread.  
-
-An individual will likely behave different when he is alove, as opposed to when he is in a group. For example
- a family will likely stick together and follow the leader, which is more often than not the father. Thus putting 
-his or hers experience and instincts aside and becoming a part of the group. Emotions also have a tendency
- to spread quickly in a group, when some people panic it is likely that more will panic shortly thereafter. If 
-there is widespread panic within the group the chance of people pushing down and trample others increase 
-significantly.
+\section{Human Behavor Models}
+There exists several behavioral models that predict movement. However the most successfully ones predict 
+animal movement as animals are rather simple compared to humans. The environment for animals tends to 
+be simpler, for instance ocean compared to urban, and animals are simpler creatures and will always rely only 
+on instinct, whether in an emergency or not. There are several different computational tools used to simulate  
+human movement during emergencies, for instance fluid and particle systems, matrix-based systems and  
+emergent systems. Nevertheless they all either have limitations or they are somewhat inaccurate. 
+ 
+It has been found that fluid and particle systems do not adequately describe human movement as humans  
+panic and make choices, both good and bad, and they all have individual quirks. For instance, in a room with  
+multiple exits a crowd tend to form a herd mentality and the majority will gather around a single exit, which  
+will slow down their speed, and other exits will see little use. However had this been simulated with a fluid  
+and particle system it would likely predict that all exits would be used equally for maximum effect. 
+ 
+In a matrix-based system the room(s) and divided into cells. The cells can represent a table, it can be full of  
+people or it can be empty. People can move from cell to cell at a rate described in the model and by the  
+rules of the model. It is important that these cells and rules are properly adjusted to fit each model as to  
+make it as realistic and precise as possible. 
+ 
+In emergent systems simple parts can interact to simulate complex systems. The existing emergent systems  
+are often criticized for being too simple. The system are often given only a few parameters (for example the  
+average speed of the humans and the location of the exits) and then attempt to model the situation by  
+assuming all humans move towards the most logical exit. 
+ 
+In general the computational tools rely too much on assumptions and too little on the sociological and psychological  
+factors. When a human is put into a crisis-situation that person can either rely on instinct, experience or making  
+choices based on the alternatives. Relying on instinct typically means that the person is panicking and make immediate  
+decisions that may or may not be good ones. People have been trampled to death by crowds that desperately is trying  
+to get away from danger. 
+ 
+A person will often follow the path it knows the best. If a worker walks up the same flight of stairs to his office  
+every day for 5 years it is expected that he will also escape down the same flight of stairs during a crisis. This  
+is why there are fire drills, so that during a crisis everyone have walked the quickest paths out. 
+ 
+In a crisis that is time-sensitive, for instance a fire, it is very difficulty for a person to weigh his options and  
+choose carefully. Some people will not stand around to observe which path might be the best or whether the  
+door is hot before opening it. And standing around and choosing carefully might be even worse as  
+over time there might be fewer safe paths as the fire spread. Therefore most people will make quick choices 
+and move as fast as they can if danger is imminent. 
+ 
+An individual will likely behave different when he is alone, as opposed to when he is in a group. For example  
+a family will likely stick together and follow the leader, which is more often than not the father. Thus putting  
+his or hers experience and instincts aside and becoming a part of the group. Emotions also have a tendency  
+to spread quickly in a group, when some people panic it is likely that more will panic shortly thereafter. If  
+there is widespread panic within the group the chance of people pushing down and trample others increase  
+significantly. 
+ 
+Xiaoshan Pan et al. created a framework to simulate human behavior. This framework implemented some 
+basic human sociological and psychological factors. Though in this model the humans were not given a path 
+to safety, they were merely left to their own devices. We will create a model where we give the people the 
+safest path to the exit. We aim to have the people act as realistic as possible and be placed in a dynamic 
+and complex environment.
+ 
