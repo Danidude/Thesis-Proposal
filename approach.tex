@@ -10,10 +10,30 @@
 %What major practical questions need to be answered.
 
 
-We will be doing design research by extending algoritms and doing empirical simulations. 
-We will collect statistical data on how many people survive the simulations
-using different algorithms and different modifications of the algorithms and
-running the simulations a sufficient amount of times until the data converges.
-Additionally we will test the complexity of the algorithms.
-The algorithms will be run against random graphs and fixed graphs. 
+
+We will be doing design research by extending algorithms and doing empirical simulations. These simulations will be graphs we have created randomly and fixed ones. Each graph will represent a ship in crisis, and each ship will have a set of passengers we need to evacuate.
+Two of these algorithms will be djikstra's and ant colony organization(ACO).
+
+Each graph will consists of nodes and vertex, where the node represents the room and the vertexes represents the doors between the rooms. 
+
+All the nodes will have a max density as there may only be a set number of passengers inside that room. Also the room may be an exit as the passengers may get to safety from it, or it cloud be lethal and have a hazard inside, for example a fire.
+
+The vertexes will contain a flow value the represents how many passengers may move trough at each time step. Also vertexes will contain the amount of attractiveness and pheromones for ACO.
+
+These experiments will be done with and without lethal hazards, to measure what impact it has on the different algorithms we will have running. As the algorithm have limited time to find the solution to the problem.
+
+We will have simulation with and without human behaviour telling what the passengers in our simulation what to do. As this might effect the performance of the algorithms.
+
+We will get the data by running several simulation of a crisis on board a ship with passengers following human behaviour and/or algorithms to tell them where to go. Then record on how many survived the incident, also how long time it took for the passengers to get to safety. 
+
+The most important question will be if the algorithms will be fast enough for them to solve the problem within time for the passengers to follow the instructions and get to safety.
+
+
+ 
+%We will collect statistical data on how many people survive the simulations
+%using different algorithms and different modifications of the algorithms and
+%running the simulations a sufficient amount of times until the data converges.
+%Additionally we will test the complexity of the algorithms.
+%The algorithms will be run against random graphs and fixed graphs, also the 
+%algorithms needs to solve the problem within a resemble amount of time.
 
