@@ -14,17 +14,21 @@
 We will be doing design research by extending algorithms and doing empirical simulations. These simulations will be graphs we have created randomly and fixed ones. Each graph will represent a ship in crisis, and each ship will have a set of passengers we need to evacuate.
 Two of these algorithms will be djikstra's and ant colony organization(ACO).
 
-Each graph will consists of nodes and vertex, where the node represents the room and the vertexes represents the doors between the rooms. 
+Each graph will consists of nodes and vertex, where the node represents the different areas inside a ship(Hallways, deck, ect) and the vertices represents the doors/paths between the rooms. In the randomized graph, exit nodes will put in random places, however in the fixed graph, they will also be fixed. 
 
-All the nodes will have a max density as there may only be a set number of passengers inside that room. Also the room may be an exit as the passengers may get to safety from it, or it cloud be lethal and have a hazard inside, for example a fire.
+All the nodes will have a captivity as there may only be a set number of passengers inside that area. Also the room may be an exit as the passengers may get to safety from it, or it cloud be lethal and have a hazard inside, for example a fire.
 
-The vertexes will contain a flow value the represents how many passengers may move trough at each time step. Also vertexes will contain the amount of attractiveness and pheromones for ACO.
+The vertices will contain a flow value the represents how many passengers may move trough at each time step. Also vertexes will contain the amount of attractiveness and pheromones for ACO.
 
 These experiments will be done with and without lethal hazards, to measure what impact it has on the different algorithms we will have running. As the algorithm have limited time to find the solution to the problem.
+
+The hazards on board the ship may change over time, as fire and smoke spread or water level rises.
 
 We will have simulation with and without human behaviour telling what the passengers in our simulation what to do. As this might effect the performance of the algorithms.
 
 We will get the data by running several simulation of a crisis on board a ship with passengers following human behaviour and/or algorithms to tell them where to go. Then record on how many survived the incident, also how long time it took for the passengers to get to safety. 
+
+The algorithm is going to find the safest path from where the passenger is standing to an exit, by avoiding hazards that are lethal and get the shortest path, if there are several that are just as good, then choose randomly one of them.
 
 The most important question will be if the algorithms will be fast enough for them to solve the problem within time for the passengers to follow the instructions and get to safety.
 
