@@ -35,15 +35,17 @@ of challenges itself. For instance the complete system would need to find ways t
 discover which phones are within the crisis area, receive information about the location of the fire onboard the ship etc.
 
 We will apply current knowledge of human behavior during crisis. The field of human behavior during a crisis is large
-and expanding it would be outside of our field of expertice. And as such we will use existing models and knowledge
-to simulate the demeanor of the passengers. 
+and expanding it would be outside of our field of expertise. And as such we will use existing models and knowledge
+to simulate the demeanor of the passengers. Additionally we assume that human behavior can be realistically modeled
+and that such a framework can capture the complexity of passengers in a crisis.
 
 A high occupant density around exists will quickly slow down evacuation speed and as such there have been conducted several studies
-towards investigating the dynamics around evacuations. As these studies have yeiled promising results we will
-limit ourselves to using these results and not producing our own. We do not find it necessary to focus on this perticular segment 
+towards investigating the dynamics around evacuations. As these studies have yielded promising results we will
+limit ourselves to using these results and not producing our own. We do not find it necessary to focus on this particular segment 
 of the evacuation process as we wish to have a broader view of the entire evacuation development.
 
-
-We asume a ship can be sufficently modeled as a graph with nodes and vertices. 
-We asume that human behavior in a crisis can be realisticly modeled and
-predicted. We asume that hazards can be modeled.
+We assume a ship with hazards can be sufficiently modeled as a graph with nodes and vertices. As a ship is a very complex
+environment it is possible that by reducing a complex structure into a simpler model some details would be lost in the
+translation. For instance a table could be knocked over or a spill could cause someone to slip. However, as there are a large number of 
+passengers on large ships we expect that by simply adding some regulatory factors to each area in the ship and running
+several iterations the results will be fairly realistic.
